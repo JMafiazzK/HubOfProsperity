@@ -3,7 +3,7 @@ from win32api import mouse_event
 import mouse
 
 from config import BG_COLOR, HEX_COLOR, HUB_COLOR
-from world.hex_grid import draw_hex, get_start_grid, pixel_to_hex
+from world.hex_grid import draw_hex, get_start_grid, get_hex
 
 
 def run_game(screen):
@@ -21,7 +21,8 @@ def run_game(screen):
             if event.type == pygame.MOUSEBUTTONDOWN:
                 if event.button == 1:  # Linksklick
                     x, y = event.pos
-                    pixel_to_hex(x, y)
+                    clicked_hex=get_hex(x, y, hexes)
+                    print(f"Hex geklickt: {clicked_hex}")
 
 
         # --- DRAW ---

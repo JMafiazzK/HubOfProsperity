@@ -67,3 +67,9 @@ DIRECTIONS = [
 
 def get_start_grid():
     return [(0, 0)] + DIRECTIONS
+
+def get_hex(mouse_x,mouse_y, hexes):
+    clicked_hex = pixel_to_hex(mouse_x, mouse_y)
+    if clicked_hex in hexes:
+        return clicked_hex
+    return None
