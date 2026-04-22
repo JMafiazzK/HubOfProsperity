@@ -1,0 +1,15 @@
+WIDTH = 800
+HEIGHT = 600
+
+HEX_RADIUS = 40
+
+# Zentrum des Grids
+CENTER_X = WIDTH // 2
+CENTER_Y = HEIGHT // 2
+
+BG_COLOR = (240, 240, 235)
+HEX_COLOR = (200, 200, 200)
+HUB_COLOR = (120, 180, 120)
+OUTLINE_COLOR = (50, 50, 50)
+
+RESOURCES = ['wood', 'water', 'food']
